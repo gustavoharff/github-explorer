@@ -1,18 +1,7 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { RepositoryList } from './components/RepositoryList';
 
-import GlobalStyle from './styles/global';
-import Routes from './routes';
+import './styles/global.scss';
 
-const App: React.FC = () => {
-  return (
-    <>
-      <BrowserRouter>
-        <Routes />
-      </BrowserRouter>
-      <GlobalStyle />
-    </>
-  );
-};
-
-export default App;
+export function App() {
+  return <RepositoryList />;
+}
